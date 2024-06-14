@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class BigTen {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int n, i = 1, big = Integer.MIN_VALUE; // Initialize 'big' to the smallest possible integer value
+
+        while (i <= 10) {
+            System.out.println("Enter a number: ");
+            n = s.nextInt();
+            if (n > big)
+                big = n;
+            i++;
+        }
+        System.out.println("Big number is: " + big);
+    }
+}
+
