@@ -2,6 +2,7 @@ class Sample
 {
 	int m;//instance or non-static variable
 	static int n;//class or static variable
+	
 	void abc()//instance or non-static method
 	{
 		m = 10;
@@ -14,7 +15,7 @@ class Sample
 	}
 	void display()
 	{
-		System.out.println("m="+m+" "+"n="+n);
+		System.out.println("m= "+m+" "+"n= "+n);
 	}
 }
 public class StaticDemo {
