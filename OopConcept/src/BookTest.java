@@ -41,7 +41,7 @@ public class BookTest {
 		Book b1 = new Book(10245, "Harry Potter And The Goblet Of Fire", 34.99);
 		b1.display();
 		// Creating an instance of SpecialEditionBook and displaying its details
-		SpecialEditionBook b2 = new SpecialEditionBook(10245, "Harry Potter And The Goblet Of Fire", 34.99, 29.99);
+		SpecialEditionBook b2 = new SpecialEditionBook(10246, "Harry Potter And The Goblet Of Fire", 34.99, 29.99);
 		b2.display();
 	}
 }

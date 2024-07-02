@@ -10,8 +10,7 @@ class Base {
 		this.j = j;
 	}
 
-	Base() {
-	}// default constructor without this we get an error in d.display
+	Base() {}// default constructor without this we get an error in d.display
 
 	void display() {
 		System.out.println("Values of I & J : " + i + " " + j);
@@ -24,7 +23,7 @@ class Derived extends Base {
 	Derived(int k) {
 		// super();//SUPER keyword is added implicitly -Invoke base class default
 		// constructor
-		super(100, 200);// hard coded
+		super(100,200);// hard coded
 		this.k = k;
 	}
 
