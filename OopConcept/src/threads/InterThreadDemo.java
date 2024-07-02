@@ -18,7 +18,7 @@ class ThreadAdd extends Thread
 public class InterThreadDemo {
 
 	public static void main(String[] args) throws InterruptedException {
-		ThreadAdd ts = new ThreadSum();
+		ThreadAdd ts = new ThreadAdd();
 		ts.start();
 		synchronized(ts)
 		{
