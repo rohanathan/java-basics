@@ -1,6 +1,6 @@
 package threads;
 
-class ThreadSum extends Thread
+class ThreadAdd extends Thread
 {
 	int sum;
 	public void run()
@@ -18,7 +18,7 @@ class ThreadSum extends Thread
 public class InterThreadDemo {
 
 	public static void main(String[] args) throws InterruptedException {
-		ThreadSum ts = new ThreadSum();
+		ThreadAdd ts = new ThreadSum();
 		ts.start();
 		synchronized(ts)
 		{
