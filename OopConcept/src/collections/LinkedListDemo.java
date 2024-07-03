@@ -29,7 +29,7 @@ public class LinkedListDemo {
             switch (choice) {
                 case 1:
                     System.out.print("Enter the element to add at last: ");
-                    linkedList.add(scanner.nextLine());
+                    linkedList.addLast(scanner.nextLine());
                     break;
                 case 2:
                     System.out.print("Enter the element to add at first: ");
@@ -59,7 +59,7 @@ public class LinkedListDemo {
                     }
                     break;
                 case 5:
-                    if (!linkedList.isEmpty()) {
+                    if (linkedList.size() > 0) {
                         linkedList.removeFirst();
                         System.out.println("First element deleted.");
                     } else {
@@ -67,7 +67,7 @@ public class LinkedListDemo {
                     }
                     break;
                 case 6:
-                    if (!linkedList.isEmpty()) {
+                    if (linkedList.size() > 0) {
                         linkedList.removeLast();
                         System.out.println("Last element deleted.");
                     } else {
@@ -114,5 +114,9 @@ public class LinkedListDemo {
 - Close the `Scanner` to release resources.
 
 ### Summary
-This program provides a menu-driven interface to perform various operations on a `LinkedList`. It uses a `switch` statement to handle user choices and a `do-while` loop to repeatedly display the menu until the user chooses to exit. Each case in the switch statement corresponds to a specific operation, ensuring that the `LinkedList` is manipulated according to user input.
+This program provides a menu-driven interface to perform various operations on a `LinkedList`. 
+It uses a `switch` statement to handle user choices and a `do-while` loop to repeatedly display 
+the menu until the user chooses to exit. 
+Each case in the switch statement corresponds to a specific operation, 
+ensuring that the `LinkedList` is manipulated according to user input.
 */
